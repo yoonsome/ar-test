@@ -68,9 +68,6 @@ function renderPlaces(places) {
 
         model.setAttribute('animation-mixer', '');
 
-        // $(".js-click-modal").on("click", function(){
-        //     alert("clicked.");
-        // })
         
         document.querySelector('button[data-action="dogam"]').addEventListener('click', onClick);
         document.querySelector(".js-close-modal").addEventListener('click',onClose);

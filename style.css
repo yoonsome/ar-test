@@ -41,9 +41,9 @@ button {
 /* 모달용 css 추가 */
 
 .modal {
-    background-color: rgb(78, 78, 78);
+    background-color: #2B2B2B;
     width: 100%;
-    height: 100%;
+    height: 100vh;
     margin: 0;
     padding: 0;
     transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
@@ -51,18 +51,44 @@ button {
     position: fixed;
     left: 0;
     text-align: left;
+    display: flex;
+    flex-direction: column;
 }
 
-.header {
-    padding:20px;
-    border-bottom: 1px solid #ddd;
-    font: 300 24px Lato;
+.header{
+    flex:1;
+    width: 91vw;
+    align-self: center;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: flex-end;
+    margin-left: 3vw;
+}
+
+.title {
+    margin-bottom: 2vh;
+    font : bold x-large "맑은 고딕",sans-serif;
+    color: white;
     position: relative;
 }
 
-.body {
-    padding: 20px;
-    font: 300 16px Lato;
+.subtitle {
+    font : medium "맑은 고딕",sans-serif;
+    color: white;
+}
+
+.usaeng{
+    width: 30vw;
+    height: 13vh;
+    margin-left: 8vw;
+    margin-right: 2vw;
+}
+.body{
+    flex:4;
+    width: 91vw;
+    align-self: center;
+    background-color: white;
+    border-radius: 16px 16px 0px 0px;
 }
 .container.modal-open .modal {
     top: 0;

@@ -13,15 +13,6 @@
         THREEx.ArToolkitContext.baseURL = 'https://jeromeetienne.github.io/AR.js/three.js/'
     </script>
     <script src="./script.js"></script>
-    <!-- <script>
-        AFRAME.registerComponent('click-listener', {
-            init: function() {
-                this.el.addEventListener('click', function (evt) {
-                    
-                });
-            }
-        });
-    </script> -->
     <script src="https://kit.fontawesome.com/04c49f1c2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css"/>
 </head>
@@ -35,6 +26,7 @@
         <a-camera gps-camera rotation-reader></a-camera>   
     </a-scene>
 
+    <!-- 도감 버튼 -->
     <div class="buttonContainer">
         <button class="btn js-click-modal" data-action="dogam">
             <i class="fas fa-torah"></i>
@@ -43,15 +35,18 @@
 
     <!-- 모달용 추가 -->
     <div class="container">
-        <!-- <button class="btn js-click-modal" data-action="dogam">
-            <i class="fas fa-torah"></i>
-        </button> -->
         <div class="modal">
-          <div class="header">This is a full-width modal with a title
-          </div>
-          <div class="body"><p>And here is all its contents.</p>
-            <a class="btn js-close-modal">Close</a>
-          </div>
+            <div class="header">
+                <div class="headerLeft">
+                    <div class="title">SKKU 유생 도감</div>
+                    <div class="subtitle"><p>몇 명의 유생을 찾았는지 확인해볼까요?</p></div>
+                </div>
+                <img class="usaeng" src="usaeng.png"/>
+            </div>
+            <div class="body">
+                <a class="btn js-close-modal">Close</a>
+            </div>
+            
         </div>
     </div>
 
