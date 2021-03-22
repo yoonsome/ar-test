@@ -45,7 +45,7 @@ var setModel = function (model, entity) {
     // div.innerText = model.info;
 };
 
-팝업 js
+// 팝업 js
 function onClick(){
     document.querySelector(".container").classList.add('modal-open');
 }
