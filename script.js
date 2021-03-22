@@ -59,15 +59,18 @@ function renderPlaces(places) {
         let model = document.createElement('a-entity');
         model.setAttribute('gps-entity-place', `latitude: ${latitude}; longitude: ${longitude};`);
 
-        setModel(models[modelIndex], model);
+        setModel(models[0], model);
 
         model.setAttribute('animation-mixer', '');
 
-        // document.querySelector('.js-click-modal').addEventListener('click',popup);
-        $(".js-click-modal").on("click", function(){
-            alert("clicked.");
-        })
+        // $(".js-click-modal").on("click", function(){
+        //     alert("clicked.");
+        // })
         
+        document.querySelector('button[data-action="dogam"]').addEventListener('click', function () {
+            alert("clicked.");
+        });
+
         scene.appendChild(model);
     });
 }
