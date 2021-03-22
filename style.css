@@ -28,35 +28,6 @@ button {
     box-shadow: 5px 5px 10px rgb(41, 41, 41);
 }
 
-.modal, .modal>*{
-    background: #fff;
-    width: 100%;
-    height: 90%;
-    margin: 0;
-    padding: 0;
-    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
-    top: 100%;
-    position: fixed;
-    left: 0;
-    text-align: left;
-}
-.modal .title {
-    top:100%;
-    padding:20px;
-    border-bottom: 1px solid #ddd;
-    font: 300 24px;
-    position: relative;
-}
-.modal .subtitle {
-    top:100%;
-    padding: 20px;
-    font: 300 16px;
-}
-
-.buttonContainer.modal-open .modal {
-    top: 0;
-  }
-
 .instructions {
     position: fixed;
     top: 5%;
@@ -64,3 +35,38 @@ button {
     color: white;
     z-index: 999999;
 }
+
+
+/* 모달용 css 추가 */
+.buttonContainer{
+    color:#333;
+    text-align: center;
+    background: #333;
+}
+
+.modal {
+    background: #fff;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    transition: all 600ms cubic-bezier(0.86, 0, 0.07, 1);
+    top: 100%;
+    position: fixed;
+    left: 0;
+    text-align: left;
+    .header {
+        padding:20px;
+        border-bottom: 1px solid #ddd;
+        font: 300 24px Lato;
+        position: relative;
+        }
+    .body {
+        padding: 20px;
+        font: 300 16px Lato;
+    }
+}
+
+.container.modal-open .modal {
+    top: 0;
+  }

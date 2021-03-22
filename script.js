@@ -45,8 +45,13 @@ var setModel = function (model, entity) {
     // div.innerText = model.info;
 };
 
-function popup(){
-    alert('clicked!');
+팝업 js
+function onClick(){
+    document.querySelector(".container").classList.add('modal-open');
+}
+
+function onClose(){
+    document.querySelector(".container").classList.remove('modal-open');
 }
 
 function renderPlaces(places) {
@@ -67,9 +72,8 @@ function renderPlaces(places) {
         //     alert("clicked.");
         // })
         
-        document.querySelector('button[data-action="dogam"]').addEventListener('click', function () {
-            alert("clicked.");
-        });
+        document.querySelector('button[data-action="dogam"]').addEventListener('click', onClick);
+        document.querySelector(".js-close-modal").addEventListener('click',onClose);
 
         scene.appendChild(model);
     });

@@ -35,10 +35,24 @@
         <a-camera gps-camera rotation-reader></a-camera>   
     </a-scene>
 
-    <div class="buttonContainer">
+    <!-- <div class="buttonContainer">
         <button class="btn js-click-modal" data-action="dogam">
             <i class="fas fa-torah"></i>
         </button>
+    </div> -->
+
+    <!-- 모달용 추가 -->
+    <div class="container">
+        <button class="btn js-click-modal" data-action="dogam">
+            <i class="fas fa-torah"></i>
+        </button>
+        <div class="modal">
+          <div class="header">This is a full-width modal with a title
+          </div>
+          <div class="body"><p>And here is all its contents.</p>
+            <a class="btn js-close-modal">Close</a>
+          </div>
+        </div>
     </div>
 
 </body>
