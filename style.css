@@ -65,6 +65,10 @@ button {
     margin-left: 3vw;
 }
 
+.headerLeft{
+    margin-right: 3.5vw;
+}
+
 .title {
     margin-bottom: 2vh;
     font : bold x-large "맑은 고딕",sans-serif;
@@ -118,7 +122,7 @@ button {
 .newUsaeng{
     height: 14vh;
     width: 26vw;
-    margin: 2%;
+    margin: 2% 2% 4% 2%;
     display: inline-block;
 }
 
