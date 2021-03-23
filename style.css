@@ -77,19 +77,58 @@ button {
     color: white;
 }
 
-.usaeng{
+.logo{
     width: 29vw;
     height: 15vh;
     margin-left: 8vw;
     margin-right: 2vw;
 }
 .body{
+    padding: 2%;
     flex:4;
-    width: 91vw;
+    width: 90vw;
     align-self: center;
     background-color: white;
     border-radius: 16px 16px 0px 0px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
 }
+
+.calScore{
+    flex:1;
+}
+
+.showScore{
+    flex:3;
+}
+
 .container.modal-open .modal {
     top: 0;
   }
+
+.block{
+    margin-bottom: 5vh;
+}
+
+.blockname{
+    margin: 4% 0% 3% 1%;
+    font : 800 large sans-serif;
+}
+
+.newUsaeng{
+    height: 14vh;
+    width: 26vw;
+    margin: 2%;
+    display: inline-block;
+}
+
+.blackImg{
+    width: 100%;
+}
+
+.major{
+    margin: 0;
+    text-align: center;
+}
+
