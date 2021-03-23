@@ -15,6 +15,12 @@
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/04c49f1c2f.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" type="text/css" href="./style.css"/>
+
+    <!-- 원형% 플러그인용 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script src="./piechart.js"></script>
+    <script src="./pie.js"></script>
+    
 </head>
 
 <body style='margin: 0; overflow: hidden;'>
@@ -33,7 +39,7 @@
         </button>
     </div>
 
-    <!-- 모달용 추가 -->
+    <!-- 도감 팝업 -->
     <div class="container">
         <div class="modal">
             <div class="header">
@@ -44,15 +50,19 @@
                 <img class="logo" src="usaeng.png"/>
             </div>
             <div class="body">
+                <!-- <a class="btn js-close-modal">[ Close ]</a> -->
                 <div class="calScore">
-                    <a class="btn js-close-modal">Close</a>
+                    <div class="chart" data-percent="55"></div>
+                    <div class="scoreTextbox">
+                        <p class="scoreText">Find : 23</p>
+                        <p class="scoreText">Total : 45</p>
+                    </div>
                 </div>
                 <div class="showScore"></div>
             </div>
             
         </div>
     </div>
-
 </body>
 
  

@@ -100,7 +100,26 @@ button {
 
 .calScore{
     flex:1;
+    margin: 2vh 0vh 2vh 0vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
 }
+
+.scoreTextbox{
+    width: 40vw;
+    padding: 3%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+}
+
+.scoreText{
+    font : 800 large sans-serif;
+    margin:2%;
+}
+
 
 .showScore{
     flex:3;
