@@ -12,7 +12,7 @@
     background: rgba(255, 255, 255, 0);
 }
 
-button {
+.js-click-modal {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -39,6 +39,16 @@ button {
 
 
 /* 모달용 css 추가 */
+.js-close-modal{
+    color:white;
+    display: block;
+    background-color: rgb(41, 41, 41);
+    border:none;
+    font-size: 2.3em;
+    text-align: right;
+    padding: 5% 6% 0% 0%;
+}
+
 
 .modal {
     background-color: #2B2B2B;
@@ -56,6 +66,11 @@ button {
 }
 
 .header{
+    display: flex;
+    flex-direction: column;
+}
+
+.info{
     flex:1;
     width: 91vw;
     align-self: center;
